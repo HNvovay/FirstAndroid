@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".NewsActivity">
+
+    <ScrollView
+        android:layout_width="434dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#03A9F4"
+                android:gravity="fill_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_back1"
+                    android:layout_width="81dp"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:text="&lt;"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/Mine"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="新闻信息" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/Base.Widget.MaterialComponents.TextView"
+                android:layout_width="431dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginBottom="15dp"
+                android:text="TextView"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="431dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/logo2" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                app:srcCompat="@drawable/img1" />
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/Base.Widget.MaterialComponents.TextView"
+                android:layout_width="431dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginBottom="52dp"
+                android:gravity="left"
+                android:text="TextView"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="328dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="赞" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
